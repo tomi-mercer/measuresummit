@@ -3,7 +3,7 @@ name: Publish Website to Web Hosting staging
 on:
   push:
     branches:
-      - staging
+      - main
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -17,5 +17,5 @@ jobs:
       with:
         server: ftp.measuresummit.com
         username: stagingbranch@measuresummit.com
-        password: ${{ secrets.FTP_PASSWORD_STAGING }}
+        password: ${{ secrets.FTP_PASSWORD }}
         port: 21
