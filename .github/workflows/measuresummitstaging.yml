@@ -1,9 +1,9 @@
 
-name: Publish Website to Web Hosting
+name: Publish Website to Web Hosting staging
 on:
   push:
     branches:
-      - main
+      - staging
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -16,6 +16,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ftp.measuresummit.com
-        username: mainbranch@measuresummit.com
-        password: ${{ secrets.FTP_PASSWORD }}
+        username: stagingbranch@measuresummit.com
+        password: ${{ secrets.FTP_PASSWORD_STAGING }}
         port: 21
