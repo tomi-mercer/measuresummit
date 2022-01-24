@@ -1,5 +1,5 @@
 
-name: Publish Website to Web Hosting staging
+name: Publish Website to Web Hosting main
 on:
   push:
     branches:
