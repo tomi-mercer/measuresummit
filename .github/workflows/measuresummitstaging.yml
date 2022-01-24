@@ -1,9 +1,9 @@
 
-name: Publish Website to Web staging
+name: Publish Website to Web Hosting staging
 on:
   push:
     branches:
-      - main
+      - staging
 jobs:
   web-deploy:
     name: 🎉 Deploy
