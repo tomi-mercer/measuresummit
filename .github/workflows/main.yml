@@ -18,5 +18,4 @@ jobs:
         server: ftp.measuresummit.com
         username: mainbranch@measuresummit.com
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /public_html/wp-content/themes/hello-elementor/
         port: 21
